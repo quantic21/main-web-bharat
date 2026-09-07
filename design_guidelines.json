@@ -1,0 +1,151 @@
+{
+  "theme": "light",
+  "typography": {
+    "primary_heading": "Cormorant Garamond",
+    "secondary_body": "Manrope",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-light tracking-tighter leading-none",
+      "h2": "text-4xl md:text-5xl md:text-6xl font-light tracking-tight leading-tight",
+      "h3": "text-2xl md:text-3xl font-light",
+      "body": "text-base md:text-lg font-light leading-relaxed tracking-wide",
+      "eyebrow": "text-xs md:text-sm uppercase tracking-[0.2em] font-semibold text-[#B08D57]"
+    },
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Manrope:wght@300;400;500;600&display=swap"
+  },
+  "colors": {
+    "background_primary": "#F5F1EA",
+    "text_primary": "#111111",
+    "accent_gold": "#B08D57",
+    "background_secondary": "#1A1A1A",
+    "text_secondary": "#F5F1EA",
+    "border_light": "rgba(17,17,17,0.1)",
+    "border_gold": "rgba(176,141,87,0.4)"
+  },
+  "spacing_and_layout": {
+    "container": "max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-24",
+    "section_padding": "py-24 md:py-40",
+    "grid_strategy": "Asymmetric, magazine-style spreads. 12-column grid. Wide gutters (gap-12 md:gap-24)."
+  },
+  "motion_and_interaction": {
+    "smooth_scroll": "Lenis (momentum scrolling for a premium feel).",
+    "hero_reveal": "Framer Motion: masked line-by-line text reveal (overflow: hidden, y: '100%' to '0%').",
+    "scroll_animations": "Whisper-quiet slow fade-ups (opacity 0 to 1, y: 30 to 0) over 1s-1.5s duration, ease: [0.16, 1, 0.3, 1]. Absolutely no bounce or spring.",
+    "parallax": "Subtle parallax on hero and large structural images using Framer Motion's useScroll and useTransform.",
+    "marquee": "Extremely slow, smooth drift editorial marquee. Not a fast news ticker."
+  },
+  "components": [
+    {
+      "name": "Navigation",
+      "description": "Fixed slim top nav with smooth scroll anchor links, wordmark logo, and solid or heavily blurred background to maintain readability.",
+      "styles": "fixed top-0 w-full z-50 bg-[#F5F1EA]/90 backdrop-blur-md border-b border-[#111111]/10 py-4"
+    },
+    {
+      "name": "SideRailIndicator",
+      "description": "Fixed slim left or right side rail tracking scroll progress through sections, utilizing gold hairline indicator.",
+      "styles": "fixed right-6 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col gap-4"
+    },
+    {
+      "name": "HeroSection",
+      "description": "Kinetic Hero with on-load masked line-by-line headline reveal ('Where Board Readiness Meets Board Distinction'). Includes 'An Initiative by Etherwire' eyebrow, 'Only 18 Will Be Profiled' gold badge, dual CTA, and a subtle parallax boardroom image.",
+      "styles": "min-h-screen flex items-center pt-24 pb-12 relative overflow-hidden"
+    },
+    {
+      "name": "TheInitiative",
+      "description": "Numbered manifesto chapters outlining the market gap. Editorial prose with generous negative space.",
+      "styles": "grid grid-cols-1 md:grid-cols-12 gap-12"
+    },
+    {
+      "name": "FivePillars",
+      "description": "Editorial grid layout defining the value proposition, separated by 1px solid gold hairlines.",
+      "styles": "border-t border-[#B08D57]/40 divide-y md:divide-y-0 md:divide-x divide-[#B08D57]/40 flex flex-col md:flex-row"
+    },
+    {
+      "name": "ProfileYourSeat",
+      "description": "Signature feature posing four boardroom questions in a refined, large typography block.",
+      "styles": "py-32 bg-[#1A1A1A] text-[#F5F1EA]"
+    },
+    {
+      "name": "The18Motif",
+      "description": "Large '18' typographic exclusivity moment taking up substantial screen space, acting as a visual break.",
+      "styles": "text-[20vw] font-light leading-none text-center text-[#B08D57] opacity-80 select-none"
+    },
+    {
+      "name": "SelectionFramework",
+      "description": "8 weighted criteria for selection, visualized with elegant gold weighted horizontal bars.",
+      "styles": "flex flex-col gap-6"
+    },
+    {
+      "name": "HowItWorks",
+      "description": "4-step process laid out in an asymmetrical grid.",
+      "styles": "grid grid-cols-1 md:grid-cols-2 gap-16"
+    },
+    {
+      "name": "OnboardingProcess",
+      "description": "Details eligibility, Category A/B, target sectors, 3-stage flow, and timeline.",
+      "styles": "border-l-2 border-[#111111]/20 pl-8 ml-4 md:ml-0"
+    },
+    {
+      "name": "WhoThisIsFor",
+      "description": "Two-column comparison (Directors vs Companies) with distinct structural styling.",
+      "styles": "grid grid-cols-1 md:grid-cols-2 gap-px bg-[#111111]/10"
+    },
+    {
+      "name": "ApplyEnquireForm",
+      "description": "Inline expanding section (not modal). Includes a toggle between Director Application and Company Enquiry. Forms with file uploads (CV, ID cert), 500-word statement, eligibility checklist.",
+      "styles": "bg-[#111111] text-[#F5F1EA] p-8 md:p-16 rounded-none"
+    },
+    {
+      "name": "EditorialMarquee",
+      "description": "Rotating editorial taglines wrapping the page subtly before the footer.",
+      "styles": "overflow-hidden whitespace-nowrap py-12 border-y border-[#111111]/10"
+    },
+    {
+      "name": "Footer",
+      "description": "Minimal footer with final CTA band, links, and wordmark.",
+      "styles": "py-12 flex justify-between items-center"
+    }
+  ],
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1503423571797-2d2bb372094a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxlbXB0eSUyMG1lZXRpbmclMjByb29tJTIwbHV4dXJ5fGVufDB8fHx8MTc4NDUyOTczNXww&ixlib=rb-4.1.0&q=85",
+      "description": "Empty luxury boardroom with long table",
+      "category": "Hero Section Background / Parallax"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxlbXB0eSUyMG1lZXRpbmclMjByb29tJTIwbHV4dXJ5fGVufDB8fHx8MTc4NDUyOTczNXww&ixlib=rb-4.1.0&q=85",
+      "description": "Industrial minimal boardroom",
+      "category": "Profile Your Seat Section"
+    },
+    {
+      "url": "https://images.pexels.com/photos/14528981/pexels-photo-14528981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Striking minimalist architectural design",
+      "category": "The Initiative / Editorial Spreads"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1760784213106-5ee511ace879?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMHRleHR1cmUlMjBsdXh1cnklMjBnb2xkfGVufDB8fHx8MTc4NDUyOTcyMHww&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract golden textured surface",
+      "category": "The 18 Motif / Accent backgrounds"
+    },
+    {
+      "url": "https://images.pexels.com/photos/3467152/pexels-photo-3467152.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Modern geometric building structure",
+      "category": "Who This Is For"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "You are building a premium, Awwwards Site-of-the-Day level editorial website. Do not build a generic SaaS template.",
+    "Embrace 'quiet luxury'. Use generous whitespace (p-24, p-32), delicate 1px gold borders, and elegant high-contrast typography.",
+    "Install and use 'lucide-react' for minimal icons, 'framer-motion' for all scroll and interaction animations, and '@studio-freight/react-lenis' or 'lenis' for smooth momentum scrolling.",
+    "Do NOT use pure #000000 or pure #FFFFFF. Stick to the provided palette: #F5F1EA (Ivory base) and #111111 (Deep Charcoal).",
+    "For the Hero section, use a strict line-by-line text reveal animation (text inside overflow-hidden divs moving from y: 100% to 0%).",
+    "All elements, especially form inputs, buttons, and navigation, MUST have 'data-testid' attributes (e.g., data-testid='apply-button').",
+    "Do not use generic Shadcn cards with thick borders or heavy shadows. If you use Shadcn forms, heavily customize them to look like flat, refined editorial inputs (border-bottom only, no rounded corners).",
+    "Ensure the layout is entirely contained within a single long-scroll page with anchor links.",
+    "Write standard React .jsx/.js (no TypeScript).",
+    "Create a simple typographic wordmark for the logo: 'ETHER BOARD OF ADVISORS'.",
+    "The application form MUST be an inline expanding section, not a modal popup. Implement an elegant toggle mechanism between Director and Company.",
+    "Avoid any bouncy, springy animations. Use bezier curves like [0.16, 1, 0.3, 1] for smooth, premium fades and reveals.",
+    "Apply a grayscale or duotone filter to the photography via CSS to match the quiet luxury aesthetic, letting the gold accents pop."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": "Avoid 'AI slop' aesthetics (generic centered layouts, simplistic gradients, uniform styling). Create depth through layered design elements, precise typography, and negative space. Every interaction needs micro-animations (hover states, slow transitions). Missing categories must use provided images; NEVER use placeholder text for images. Add 'data-testid' to all interactive and key informational elements."
+}
