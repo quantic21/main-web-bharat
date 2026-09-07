@@ -4,11 +4,7 @@
   "outputDirectory": "frontend/build",
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/index.py"
-    },
-    {
-      "source": "/(.*)",
+      "source": "/((?!api/|static/|etherwire-pics/|.*\\..*).*)",
       "destination": "/index.html"
     }
   ]
